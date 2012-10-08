@@ -1,0 +1,134 @@
+{
+	 "mail":
+        {
+		"From":
+            {
+            "type":"TEdit",
+            "label":"From",            
+			"enabled":true,
+			"visible":true,			
+			"placeholder":"From",						
+			"klasa":"span7",
+			"rule":
+				{
+				"required": true,
+				"email": true
+				
+				},
+			"message":
+				{
+				"required": "Upiši svoj mail",
+				"email": "Upiši važeču email adresu"
+				}
+            
+            },		
+		"To":
+            {
+            "type":"TEdit",
+            "label":"To",            
+			"enabled":true,
+			"visible":true,			
+			"placeholder":"To",						
+			"klasa":"span7",
+			"rule":
+				{
+				"required": true,
+				"multiemail": true
+				
+				},
+			"message":
+				{
+				"required": "Upiši svoj mail",
+				"email": "Upiši važeču email adresu"
+				}
+            
+            },		
+		"Cc":
+            {
+            "type":"TEdit",
+            "label":"Cc",            
+			"enabled":true,
+			"visible":true,			
+			"placeholder":"Cc",						
+			"klasa":"span7",
+			"rule":
+				{
+				"required": false,
+				"multiemail": true
+				
+				},
+			"message":
+				{				
+				"email": "Upiši važeču email adresu"
+				}
+            
+            },		
+		"Bcc":
+            {
+            "type":"TEdit",
+            "label":"Bcc",            
+			"enabled":true,
+			"visible":true,			
+			"placeholder":"Bcc",						
+			"klasa":"span7",
+			"rule":
+				{
+				"required": false,
+				"multiemail": true
+				
+				},
+			"message":
+				{				
+				"email": "Upiši važeču email adresu"
+				}
+            
+            },	
+		"Subject":
+            {
+            "type":"TEdit",
+            "label":"Subject",            
+			"enabled":true,
+			"visible":true,			
+			"placeholder":"Subject",						
+			"klasa":"span7",
+			"rule":
+				{
+				"required": true
+				},
+			"message":
+				{				
+				"required": "Upiši subject"
+				}
+            
+            },	
+		"Message":
+            {
+            "type":"TMemo",
+            "label":"Message",            
+			"enabled":true,
+			"visible":true,			
+			"rows":20,
+			"cols":80,			
+			"klasa":"span9"
+			
+            },
+		"tipka":
+            {
+            "type":"TButton",
+            "label":"Pošalji",
+            "kind":"submit",
+			"klasa":"btn btn-primary",
+			"icon":"icon-check icon-white",
+			"group":"3"
+            },
+		"tipka1":
+            {
+            "type":"TButton",
+            "label":"Reset",
+            "kind":"reset",
+			"klasa":"btn ",
+			
+			"group":"3"
+            }	
+        }
+}
